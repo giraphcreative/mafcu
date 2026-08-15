@@ -12,7 +12,7 @@ $admin_email = get_option( 'admin_email' );
 ?>
 	
 	</section>
-	<div class="separator green"></div>
+	<div class="separator green margin"></div>
 	<footer class="footer">
 		<div class="columns">
 			<?php

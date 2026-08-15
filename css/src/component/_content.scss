@@ -6,14 +6,18 @@
     @extend .content-style;
     @include padding;
     background: white;
-    color: black;
+    color: $navy;
+    &.navy {
+        background: $navy;
+        color: white;
+    }
     &.navy-stripe {
-        background: $navy url(../img/bg-stripes-white.svg) top center no-repeat fixed;
+        background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
     }
     &.white-stripe {
-        background: white url(../img/bg-stripes-white.svg) top center no-repeat fixed;
+        background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: $navy;
     }
@@ -48,16 +52,20 @@
 }
 
 .content-two-container {
-    background: white;
-    color: black;
     @include padding;
+    background: white;
+    color: $navy;
+    &.navy {
+        background: $navy;
+        color: white;
+    }
     &.navy-stripe {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
     }
     &.white-stripe {
-        background: white url(../img/bg-stripes-white.svg) top center no-repeat fixed;
+        background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: $navy;
     }
@@ -181,13 +189,18 @@
 .content-three-container {
     @include padding;
     background: white;
+    color: $navy;
+    &.navy {
+        background: $navy;
+        color: white;
+    }
     &.navy-stripe {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
     }
     &.white-stripe {
-        background: white url(../img/bg-stripes-white.svg) top center no-repeat fixed;
+        background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: $navy;
     }

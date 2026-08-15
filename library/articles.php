@@ -47,7 +47,6 @@ function articles_shortcode( $atts ) {
             $return .= get_the_post_thumbnail();
             $return .= '</a>';
             $return .= '</div>';
-            $return .= '<hr />';
             $return .= '<div class="entry-inner">';
             $return .= '<a href="' . get_the_permalink() . '"><h6>' . get_the_title() . '</h6></a>';
             // $return .= '<p class="post-date">' . get_the_date() . '</p>';

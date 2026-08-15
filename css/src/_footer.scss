@@ -16,11 +16,14 @@ footer {
             font-size: 1.8em;
             padding-top: 15px;
         }
+        .photo img {
+            max-width: 300px;
+        }
     }
     .socials {
         a {
             img {
-                max-width: 20%;
+                max-width: 50px;
             }
         }
     }
