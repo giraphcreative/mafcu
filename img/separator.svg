@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Graphic_Elements" data-name="Graphic Elements" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.29 50.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M6.07,10.8h55.49c4.83,0,4.83-7.5,0-7.5H6.07c-4.83,0-4.83,7.5,0,7.5h0Z"/>
+  <path class="cls-1" d="M6.07,29.51h55.49c4.83,0,4.83-7.5,0-7.5H6.07c-4.83,0-4.83,7.5,0,7.5h0Z"/>
+  <path class="cls-1" d="M6.07,48.23h55.49c4.83,0,4.83-7.5,0-7.5H6.07c-4.83,0-4.83,7.5,0,7.5h0Z"/>
+</svg>

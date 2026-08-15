@@ -1,0 +1,72 @@
+.by-the-numbers {
+    @include padding-side( 20px);
+    @include respond-to( $bp-s) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include respond-to( $bp-l) {
+        flex-wrap: nowrap;
+    }
+    &.sky {
+        background: $sky;
+    }
+    &.green {
+        background: $green;
+        color: white;
+    }
+    .number {
+        padding: 20px;
+        text-align: center;
+        .label {
+            line-height: 1.2em;
+            span {
+                @include font-bold;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+        .num {
+            @include font-bold;
+            font-size: 2.8em;
+            line-height: 1em;
+            position: relative;
+            @include respond-to( $bp-xl) {
+                font-size: 3.3em;
+            }
+            .percent-apr,
+            .percent-apy {
+                display: inline-block;
+                background: url(../img/percent-apr.svg) center center no-repeat;
+                background-size: contain;
+                width: 40px;
+                height: 40px;
+                position: relative;
+                top: 5px;
+                @include respond-to( $bp-xl) {
+                    top: 3px;
+                }
+            }
+            .percent-apy {
+                background-image: url(../img/percent-apy.svg);
+            }
+        }
+        @include respond-to( $bp-s) {
+            flex: 0 0 50%;
+        }
+        @include respond-to( $bp-l) {
+            flex: 1;
+            position: relative;
+            padding: 15px 30px;
+            &:not(:first-child):before {
+                content: '';
+                position: absolute;
+                background: rgba( white, .6);
+                width: 1px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                transform: skewX(-12deg);
+            }
+        }
+    }
+}

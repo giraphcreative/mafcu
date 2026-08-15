@@ -1,0 +1,89 @@
+.icons-container {
+    overflow: hidden;
+    background: white url(../img/bg-stripes-white.svg) top center no-repeat fixed;
+    background-size: cover;
+    color: $navy;
+    @include padding;
+    .icons {
+        @include respond-to( $bp-m) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -5%;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .icon {
+            display: flex;
+            align-items: flex-start;
+            margin-right: 3%;
+            padding-bottom: 40px;
+            @include respond-to( $bp-m) {
+                align-items: center;
+                flex: 0 0 45%;
+                margin-right: 5%;
+                padding: 20px;
+            }
+            .icon-container {
+                flex: 0 0 30%;
+                display: flex;
+                align-items: center;
+                aspect-ratio: 1 / 1;
+                text-align: center;
+                position: relative;
+                img {
+                    flex: 1;
+                    position: relative;
+                    z-index: 1;
+                }
+                &:after {
+                    position: absolute;
+                    z-index: 0;
+                    content: "";
+                    width: 84%;
+                    aspect-ratio: 1 / 1;
+                    background: $grey;
+                    border-radius: 50%;
+                    left: 8%;
+                    top: 8%;
+                }
+                &.navy:after {
+                    background-color: $navy;
+                }
+                &.blue:after {
+                    background-color: $blue;
+                }
+                &.sky:after {
+                    background-color: $sky;
+                }
+                &.green:after {
+                    background-color: $green;
+                }
+                &.yellow:after {
+                    background-color: $yellow;
+                }
+            }
+            .icon-content {
+                flex: 1 1 65%;
+                padding-left: 5%;
+                h4 {
+                    @include font-black;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    line-height: 1.4em;
+                    text-transform: uppercase;
+                    color: $navy;
+                    @include respond-to( $bp-l) {
+                        font-size: 1.2em;
+                    }
+                }
+                p {
+                    color: $navy;
+                }
+            }
+        }
+    }
+}
