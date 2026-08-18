@@ -5,8 +5,11 @@
         overflow: hidden;
         margin-bottom: 6px;
         .photo-title {
-            padding: 12px 15px;
+            padding: 15px 20px;
             color: white;
+            font-size: 1.2em;
+            @include font-bold;
+            text-transform: uppercase;
             &.navy {
                 background: $navy;
             }
@@ -32,5 +35,6 @@
     .photo-caption {
         font-size: .85em;
         line-height: 1.4em;
+        padding: 5px 20px;
     }
 }
