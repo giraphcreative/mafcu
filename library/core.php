@@ -26,3 +26,10 @@ register_sidebar( array(
     'after_title' => '</h4></div>',
 ) );
 
+
+
+// set excerpt to short word count.
+function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

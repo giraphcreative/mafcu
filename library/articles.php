@@ -38,7 +38,7 @@ function articles_shortcode( $atts ) {
         // Start looping over the query results.
         while ( $query->have_posts() ) {
             $query->the_post();
-            $color = get_field( 'theme' );
+            $color = get_field( 'color' );
             $categories = get_the_category();
             $cat = $categories[0];
             $return .= '<div class="entry ' . $color . '">';
@@ -48,10 +48,10 @@ function articles_shortcode( $atts ) {
             $return .= '</a>';
             $return .= '</div>';
             $return .= '<div class="entry-inner">';
-            $return .= '<a href="' . get_the_permalink() . '"><h6>' . get_the_title() . '</h6></a>';
+            $return .= '<a href="' . get_the_permalink() . '"><h4>' . get_the_title() . '</h4></a>';
             // $return .= '<p class="post-date">' . get_the_date() . '</p>';
             $return .= wpautop( get_the_excerpt() );
-            // $return .= '<p><a href="' . get_the_permalink() . '" class="btn ' . $color . '">Read More</a></p>';
+            $return .= '<p><a href="' . get_the_permalink() . '" class="btn arrow ' . $color . '">Read More</a></p>';
             $return .= '</div>';
             $return .= '</div>';
         }

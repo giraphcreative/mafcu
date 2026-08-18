@@ -86,7 +86,22 @@
         @extend .content-style;
         margin-bottom: 25px;
         .entry-inner {
-            padding: 20px 0;
+            padding: 15px 20px;
+        }
+        &.navy .entry-inner {
+            background: rgba( $navy, .1);
+        }
+        &.blue .entry-inner {
+            background: rgba( $blue, .1);
+        }
+        &.sky .entry-inner {
+            background: rgba( $sky, .1);
+        }
+        &.green .entry-inner {
+            background: rgba( $green, .1);
+        }
+        &.yellow .entry-inner {
+            background: rgba( $yellow, .1);
         }
         .thumbnail {
             position: relative;
@@ -97,9 +112,10 @@
             }
         }
         h4 {
+            @include font-bold;
             font-size: 1.1em;
             line-height: 1.4em;
-            font-weight: bold;
+            color: $navy;
             a {}
         }
         p {
