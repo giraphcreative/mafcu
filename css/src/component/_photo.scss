@@ -1,0 +1,36 @@
+.photo {
+    margin: 10px 0;
+    .photo-inner {
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 6px;
+        .photo-title {
+            padding: 12px 15px;
+            color: white;
+            &.navy {
+                background: $navy;
+            }
+            &.blue {
+                background: $blue;
+            }
+            &.sky {
+                background: $sky;
+                color: $navy;
+            }
+            &.green {
+                background: $green;
+            }
+            &.yellow {
+                background: $yellow;
+                color: $navy;
+            }
+        }
+        img {
+            display: block;
+        }
+    }
+    .photo-caption {
+        font-size: .85em;
+        line-height: 1.4em;
+    }
+}

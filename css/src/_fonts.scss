@@ -53,25 +53,31 @@
 }
 
 @mixin font-narrow {
-    font-family: "alternate-gothic-atf-thin", sans-serif;
+    font-family: "alternate-gothic-condensed-a", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-@mixin font-narrow-thin {
-    font-family: "alternate-gothic-atf-thin", sans-serif;
-    font-weight: 100;
+@mixin font-narrow-demi {
+    font-family: "alternate-gothic-condensed-a", sans-serif;
+    font-weight: 600;
     font-style: normal;
 }
 
 @mixin font-narrow-bold {
-    font-family: "alternate-gothic-atf-thin", sans-serif;
+    font-family: "alternate-gothic-condensed-a", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-@mixin font-narrow-black {
-    font-family: "alternate-gothic-atf", sans-serif;
+@mixin font-narrow-heavy {
+    font-family: "alternate-gothic-condensed-a", sans-serif;
     font-weight: 800;
+    font-style: normal;
+}
+
+@mixin font-narrow-black {
+    font-family: "alternate-gothic-condensed-a", sans-serif;
+    font-weight: 900;
     font-style: normal;
 }

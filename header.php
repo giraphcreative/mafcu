@@ -16,6 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+<script src="https://kit.fontawesome.com/731c28f6f9.js" crossorigin="anonymous"></script>
 <link href="<?php bloginfo( "template_url" ) ?>/css/main.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -35,9 +36,9 @@
 	</nav>
 
 	<div class="aux">
-		<a href="#" class="btn blue"><span>Make an Appointment</span></a>
-		<a href="#" class="btn green"><span>Locations &amp; Hours</span></a>
-		<a href="#" class="btn yellow"><span>Online Services Login</span></a>
+		<a href="#" class="btn blue"><i class="fa-solid fa-messages"></i> Make an Appointment</a>
+		<a href="#" class="btn green"><i class="fa-solid fa-location-dot"></i> Locations &amp; Hours</a>
+		<a href="#" class="btn yellow"><i class="fa-solid fa-lock-keyhole"></i> Online Services Login</a>
 	</div>
 	
 </header>

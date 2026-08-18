@@ -20,7 +20,7 @@ if( have_rows('icons') ):
             <div class="icon-content">
                 <h4>' . $title . '</h4>
                 <p>' . $content . '</p>
-                <a href="' . $link . '" class="btn ' . $color . '">Learn More</a>
+                <a href="' . $link . '" class="btn arrow ' . $color . '">Learn More</a>
             </div>
         </div>';
 

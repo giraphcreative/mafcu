@@ -105,4 +105,38 @@
     &.green:hover:after {
         background-color: lighten( $green, 8%);
     }
+    &.arrow {
+        @include font-narrow-bold;
+        font-size: 1.2em;
+        color: $navy;
+        margin: 0;
+        padding: 10px 30px 10px 0;
+        &:after,
+        &:before {
+            display: none;
+        }
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &.navy.arrow {
+        background: transparent url(../img/button-arrow-navy.svg) right center no-repeat;
+        background-size: contain;
+    }
+    &.blue.arrow {
+        background: transparent url(../img/button-arrow-blue.svg) right center no-repeat;
+        background-size: contain;
+    }
+    &.sky.arrow {
+        background: transparent url(../img/button-arrow-sky.svg) right center no-repeat;
+        background-size: contain;
+    }
+    &.green.arrow {
+        background: transparent url(../img/button-arrow-green.svg) right center no-repeat;
+        background-size: contain;
+    }
+    &.yellow.arrow {
+        background: transparent url(../img/button-arrow-yellow.svg) right center no-repeat;
+        background-size: contain;
+    }
 }

@@ -23,10 +23,12 @@ header {
         text-align: center;
         .btn {
             @include font-narrow-bold;
-            font-size: 1.1em;
+            font-size: 1.2em;
             display: block;
             margin: 0 30px;
-            letter-spacing: 1px;
+            i {
+                height: 24px;
+            }
             @include respond-to( $bp-s) {
                 display: inline-block;
                 margin: 0 15px;
