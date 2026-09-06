@@ -1,11 +1,8 @@
-$accordion-arrow-size: 20px;
+$accordion-arrow-size: 35px;
 .accordions {
     padding: 15px 0;
     .accordion {
         margin-bottom: 10px;
-        border-radius: 6px;
-        overflow: hidden;
-        border: 1px solid rgba( black, .5);
         .accordion-handle {
             @include font-bold;
             position: relative;
@@ -14,6 +11,10 @@ $accordion-arrow-size: 20px;
             padding: 15px 10px 15px 20px;
             cursor: pointer;
             font-size: 1.1em;
+            @include respond-to( $bp-m) {
+                padding: 20px 10px 20px 20px;
+            }
+            padding: 15px 10px 15px 20px;
             &:hover {
                 color: white;
                 cursor: pointer;
@@ -26,7 +27,8 @@ $accordion-arrow-size: 20px;
                 width: $accordion-arrow-size;
                 height: $accordion-arrow-size;
                 @include font-bold;
-                content: "\279C";
+                content: "+";
+                //content: "\279C";
                 transform: rotate( 90deg);
                 font-size: $accordion-arrow-size;
                 line-height: 1em;
@@ -36,21 +38,57 @@ $accordion-arrow-size: 20px;
                 color: white;
                 transition: transform 300ms ease-in-out;
             }
+            &:before {
+                content: '';
+                position: absolute;
+                right: -15px;
+                top: 0;
+                width: 25px;
+                height: 100%;
+                background: $grey;
+                transform: skewX(-12deg);
+                transition: all 300ms ease-in-out;
+            }
         }
         .accordion-content {
             display: none;
         }
-        &.blue .accordion-handle {
+        &.navy .accordion-handle,
+        &.navy .accordion-handle:before {
+            background-color: $navy;
+        }
+        &.blue .accordion-handle,
+        &.blue .accordion-handle:before {
             background-color: $blue;
         }
-        &.sky .accordion-handle {
+        &.sky .accordion-handle,
+        &.sky .accordion-handle:before {
             background-color: $sky;
-            color: $blue;
+            color: black;
+        }
+        &.yellow .accordion-handle,
+        &.yellow .accordion-handle:before {
+            background-color: $yellow;
+            color: black;
+        }
+        &.green .accordion-handle,
+        &.green .accordion-handle:before {
+            background-color: $green;
+        }
+        &.grey-light .accordion-handle,
+        &.grey-light .accordion-handle:before {
+            background-color: $grey-light;
+        }
+        &.grey-dark .accordion-handle,
+        &.grey-dark .accordion-handle:before {
+            background-color: $grey-dark;
         }
         &.open {
             .accordion-handle {
                 &:after {
-                    transform: rotate( 270deg);
+                    content: '-';
+                    transform: rotate( 360deg);
+                    margin-top: -20px;
                 }
             }
             .accordion-content {

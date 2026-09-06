@@ -1,15 +1,13 @@
-
-
 // tab controls
-jQuery(document).ready(function($){
+jQuery(document).ready(function($) {
 
-	if ( $( '.accordions' ).length ) {
+    if ($('.accordions').length) {
 
-		$( '.accordions .accordion .accordion-handle' ).click(function(){
-			$( this ).parent( '.accordion' ).toggleClass( 'open' );
-		});
+        $('.accordions .accordion .accordion-handle').click(function() {
+            console.log('test');
+            $(this).parent('.accordion').toggleClass('open');
+        });
 
-	}
+    }
 
 });
-

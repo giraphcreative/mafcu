@@ -21,7 +21,7 @@
             "pagination": 0,
             "min": 0,
             "max": 0,
-            "collapsed": "",
+            "collapsed": "field_66b4fae287ec6",
             "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
@@ -61,14 +61,16 @@
                         "id": ""
                     },
                     "choices": {
+                        "navy": "Navy",
                         "blue": "Blue",
-                        "orange": "Orange",
-                        "purple": "Purple",
                         "sky": "Sky",
+                        "yellow": "Yellow",
+                        "green": "Green",
+                        "grey": "Grey",
                         "grey-dark": "Grey (Dark)",
                         "grey-light": "Grey (Light)"
                     },
-                    "default_value": "purple",
+                    "default_value": "navy",
                     "return_format": "value",
                     "multiple": 0,
                     "allow_null": 0,
@@ -153,5 +155,5 @@
             "json"
         ]
     },
-    "modified": 1787016372
+    "modified": 1788665858
 }
