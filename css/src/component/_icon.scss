@@ -4,6 +4,29 @@
     background-size: cover;
     color: $navy;
     @include padding;
+    &.stripes-navy {
+        background-color: $navy;
+        color: white;
+        .icons .icon .icon-content,
+        .btn.arrow {
+            color: white;
+        }
+        .icons .icon .icon-container:after {
+            content: none;
+        }
+    }
+    &.rings {
+        background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
+        background-size: cover;
+        color: white;
+        .icons .icon .icon-content,
+        .btn.arrow {
+            color: white;
+        }
+        .icons .icon .icon-container:after {
+            content: none;
+        }
+    }
     .icons {
         @include respond-to( $bp-m) {
             display: flex;
@@ -69,19 +92,16 @@
             .icon-content {
                 flex: 1 1 65%;
                 padding-left: 5%;
+                color: $navy;
                 h4 {
                     @include font-black;
                     font-weight: bold;
                     font-size: 1.1em;
                     line-height: 1.4em;
                     text-transform: uppercase;
-                    color: $navy;
                     @include respond-to( $bp-l) {
                         font-size: 1.2em;
                     }
-                }
-                p {
-                    color: $navy;
                 }
             }
         }

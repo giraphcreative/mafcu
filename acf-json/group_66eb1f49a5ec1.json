@@ -48,7 +48,11 @@
                 "id": ""
             },
             "choices": {
-                "tan": "Tan",
+                "navy": "Navy",
+                "sky": "Sky",
+                "stripes-white": "Stripes (White)",
+                "stripes-navy": "Stripes (Navy)",
+                "rings": "Tree Rings (Navy)",
                 "white": "White"
             },
             "default_value": "white",
@@ -59,10 +63,10 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": "",
-            "allow_custom": 0,
-            "search_placeholder": "",
             "create_options": 0,
-            "save_options": 0
+            "save_options": 0,
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_66eb1f49aa7e0",
@@ -277,5 +281,5 @@
         ],
         "note": "This module is intended to be cloned into multiple places."
     },
-    "modified": 1787016630
+    "modified": 1788701990
 }

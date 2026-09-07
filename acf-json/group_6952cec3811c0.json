@@ -17,21 +17,22 @@
                 "id": ""
             },
             "choices": {
-                "traces": "Traces (Circuit Board)",
-                "waves": "Waves"
+                "stripes-white": "Stripes (White)",
+                "stripes-navy": "Stripes (Navy)",
+                "rings": "Tree Rings (Navy)"
             },
-            "default_value": "traces",
+            "default_value": "stripes-white",
             "return_format": "value",
             "multiple": 0,
-            "allow_custom": 0,
-            "placeholder": "",
-            "search_placeholder": "",
             "allow_null": 0,
             "allow_in_bindings": 0,
             "ui": 0,
             "ajax": 0,
+            "placeholder": "",
             "create_options": 0,
-            "save_options": 0
+            "save_options": 0,
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_6952cec2bbbf6",
@@ -292,5 +293,5 @@
             "json"
         ]
     },
-    "modified": 1787016644
+    "modified": 1788700171
 }

@@ -11,15 +11,24 @@
         background: $navy;
         color: white;
     }
-    &.navy-stripe {
+    &.sky {
+        background: $sky;
+        color: $navy;
+    }
+    &.stripes-navy {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
     }
-    &.white-stripe {
+    &.stripes-white {
         background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: $navy;
+    }
+    &.rings {
+        background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
+        background-size: cover;
+        color: white;
     }
     &.pad-none {
         padding: 0 !important;
@@ -59,15 +68,24 @@
         background: $navy;
         color: white;
     }
-    &.navy-stripe {
+    &.sky {
+        background: $sky;
+        color: $navy;
+    }
+    &.stripes-navy {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
     }
-    &.white-stripe {
+    &.stripes-white {
         background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: $navy;
+    }
+    &.rings {
+        background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
+        background-size: cover;
+        color: white;
     }
     &.pad-none {
         padding: 0 !important;
@@ -194,15 +212,20 @@
         background: $navy;
         color: white;
     }
-    &.navy-stripe {
+    &.stripes-navy {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
     }
-    &.white-stripe {
+    &.stripes-white {
         background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: $navy;
+    }
+    &.rings {
+        background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
+        background-size: cover;
+        color: white;
     }
     &.pad-none {
         padding: 0 !important;

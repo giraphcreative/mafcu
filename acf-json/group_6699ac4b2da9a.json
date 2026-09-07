@@ -82,10 +82,11 @@
             },
             "choices": {
                 "navy": "Navy",
-                "navy-stripe": "Navy (with Stripes)",
-                "light-blue": "Light Blue",
-                "white": "White",
-                "white-stripe": "White (with Stripes)"
+                "sky": "Sky",
+                "stripes-white": "Stripes (White)",
+                "stripes-navy": "Stripes (Navy)",
+                "rings": "Tree Rings (Navy)",
+                "white": "White"
             },
             "default_value": "white",
             "return_format": "value",
@@ -270,5 +271,5 @@
         ],
         "note": "This module is intended to be cloned into multiple places."
     },
-    "modified": 1787016625
+    "modified": 1788701981
 }

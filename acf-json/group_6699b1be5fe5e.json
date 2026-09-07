@@ -24,13 +24,14 @@
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
+            "allow_in_bindings": 1,
             "ui": 0,
             "ajax": 0,
             "placeholder": "",
-            "allow_custom": 0,
-            "search_placeholder": "",
             "create_options": 0,
-            "save_options": 0
+            "save_options": 0,
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_6699b1befc994",
@@ -48,10 +49,11 @@
             },
             "choices": {
                 "navy": "Navy",
-                "navy-stripe": "Navy (with Stripes)",
-                "light-blue": "Light Blue",
-                "white": "White",
-                "white-stripe": "White (with Stripes)"
+                "sky": "Sky",
+                "stripes-white": "Stripes (White)",
+                "stripes-navy": "Stripes (Navy)",
+                "rings": "Tree Rings (Navy)",
+                "white": "White"
             },
             "default_value": "white",
             "return_format": "value",
@@ -155,5 +157,5 @@
             "json"
         ]
     },
-    "modified": 1787016619
+    "modified": 1788702157
 }
