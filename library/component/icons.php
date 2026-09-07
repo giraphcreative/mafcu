@@ -19,9 +19,9 @@ if( have_rows('icons') ):
             <div class="icon-container ' . $color . '"><img src="' . $icon . '" /></div>
             <div class="icon-content">
                 <h4>' . $title . '</h4>
-                <p>' . $content . '</p>
-                <a href="' . $link . '" class="btn arrow ' . $color . '">Learn More</a>
-            </div>
+                <p>' . $content . '</p>' .
+                ( !empty( $link ) ? '<a href="' . $link . '" class="btn arrow ' . $color . '">Learn More</a>' : '' ) .
+            '</div>
         </div>';
 
     endwhile;
