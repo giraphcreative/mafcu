@@ -30,6 +30,10 @@
         background-size: cover;
         color: white;
     }
+    &.stripes-light-navy {
+        background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
+        background-size: cover;
+    }
     &.pad-none {
         padding: 0 !important;
     }
@@ -76,6 +80,10 @@
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
+    }
+    &.stripes-light-navy {
+        background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
+        background-size: cover;
     }
     &.stripes-white {
         background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
@@ -216,6 +224,10 @@
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
         color: white;
+    }
+    &.stripes-light-navy {
+        background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
+        background-size: cover;
     }
     &.stripes-white {
         background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;

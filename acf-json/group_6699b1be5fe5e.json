@@ -52,6 +52,7 @@
                 "sky": "Sky",
                 "stripes-white": "Stripes (White)",
                 "stripes-navy": "Stripes (Navy)",
+                "stripes-light-navy": "Stripes (Light Navy)",
                 "rings": "Tree Rings (Navy)",
                 "white": "White"
             },
@@ -157,5 +158,5 @@
             "json"
         ]
     },
-    "modified": 1788702157
+    "modified": 1788880341
 }

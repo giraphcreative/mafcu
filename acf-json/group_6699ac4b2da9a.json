@@ -85,6 +85,7 @@
                 "sky": "Sky",
                 "stripes-white": "Stripes (White)",
                 "stripes-navy": "Stripes (Navy)",
+                "stripes-light-navy": "Stripes (Light Navy)",
                 "rings": "Tree Rings (Navy)",
                 "white": "White"
             },
@@ -271,5 +272,5 @@
         ],
         "note": "This module is intended to be cloned into multiple places."
     },
-    "modified": 1788701981
+    "modified": 1788880351
 }
