@@ -8,14 +8,13 @@ $accordion-arrow-size: 35px;
             position: relative;
             background-color: $grey;
             color: white;
-            padding: 15px 10px 15px 20px;
+            padding: 15px 50px 15px 20px;
             cursor: pointer;
             font-size: 1.1em;
             text-transform: uppercase;
             @include respond-to( $bp-m) {
-                padding: 20px 10px 20px 40px;
+                padding: 20px 50px 20px 40px;
             }
-            padding: 15px 10px 15px 20px;
             &:hover {
                 color: white;
                 cursor: pointer;
