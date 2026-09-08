@@ -12,16 +12,48 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "choices": {
                 "stripes-white": "Stripes (White)",
                 "stripes-navy": "Stripes (Navy)",
+                "stripes-light-navy": "Stripes (Light Navy)",
                 "rings": "Tree Rings (Navy)"
             },
             "default_value": "stripes-white",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0,
+            "allow_custom": 0,
+            "search_placeholder": ""
+        },
+        {
+            "key": "field_6aa00f5aa44c6",
+            "label": "Orientation",
+            "name": "orientation",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "horizontal": "Horizontal",
+                "vertical": "Vertical"
+            },
+            "default_value": "horizontal",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -141,6 +173,28 @@
                     "default_value": "",
                     "maxlength": "",
                     "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6952cec2bbbf6"
+                },
+                {
+                    "key": "field_6aa012d1ab66d",
+                    "label": "Button Text",
+                    "name": "button-text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Learn More",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
@@ -293,5 +347,5 @@
             "json"
         ]
     },
-    "modified": 1788700171
+    "modified": 1788877779
 }

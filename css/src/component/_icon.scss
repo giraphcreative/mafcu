@@ -27,6 +27,55 @@
             content: none;
         }
     }
+    &.stripes-light-navy {
+        background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
+        background-size: cover;
+    }
+    &.stripes-light-navy.vertical,
+    &.stripes-white.vertical {
+        .icons .icon {
+            .icon-container {
+                padding-bottom: 15px;
+            }
+            .icon-content {
+                background: white;
+                padding: 100px 20px 30px 20px;
+                margin-top: -100px;
+                h4 {
+                    font-size: 2.6em;
+                }
+                p {
+                    @include font-bold;
+                    font-size: 1.4em;
+                    padding: 0 0 10px;
+                }
+            }
+        }
+    }
+    &.vertical {
+        .icons {
+            @include respond-to( $bp-m) {
+                flex-wrap: nowrap;
+                .icon {
+                    flex: 1;
+                    display: block;
+                    .icon-container {
+                        max-height: 150px;
+                        margin: 0 auto 30px;
+                        &:after {
+                            width: 90%;
+                            left: 5%;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                    .icon-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
     .icons {
         @include respond-to( $bp-m) {
             display: flex;
