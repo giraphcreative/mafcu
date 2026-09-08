@@ -3,42 +3,6 @@
     "title": "Module: Title",
     "fields": [
         {
-            "key": "field_695c96aed4481",
-            "label": "Image",
-            "name": "image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_695c965dd4480",
-                        "operator": "==",
-                        "value": "image"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "65",
-                "class": "",
-                "id": ""
-            },
-            "uploader": "",
-            "return_format": "url",
-            "library": "all",
-            "acfe_thumbnail": 0,
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
-        },
-        {
             "key": "field_695c9647d447f",
             "label": "Title Text",
             "name": "title",
@@ -60,9 +24,9 @@
             "append": ""
         },
         {
-            "key": "field_695c965dd4480",
-            "label": "Style",
-            "name": "style",
+            "key": "field_6aa03803f85fa",
+            "label": "Color",
+            "name": "color",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -74,10 +38,13 @@
                 "id": ""
             },
             "choices": {
-                "basic": "Basic",
-                "image": "Image"
+                "navy": "Navy",
+                "blue": "Blue",
+                "sky": "Sky",
+                "green": "Green",
+                "yellow": "Yellow"
             },
-            "default_value": "basic",
+            "default_value": "blue",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -89,6 +56,34 @@
             "save_options": 0,
             "allow_custom": 0,
             "search_placeholder": ""
+        },
+        {
+            "key": "field_695c96aed4481",
+            "label": "Image",
+            "name": "image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "65",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "return_format": "url",
+            "library": "all",
+            "acfe_thumbnail": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -117,5 +112,5 @@
             "json"
         ]
     },
-    "modified": 1787016716
+    "modified": 1788885160
 }

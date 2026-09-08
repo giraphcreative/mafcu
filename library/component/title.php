@@ -1,20 +1,17 @@
 <?php
 
 // get the title and theme
-$title = get_sub_field('title');
-$style = get_sub_field('style');
+$title = get_sub_field( 'title' );
+$color = get_sub_field( 'color' );
+$image = get_sub_field( 'image' );
 
 // if it's not empty, lets output it
 if ( !empty( $title ) ) {
 	?>
-<div class="title-container <?php print $style ?>">
-	<?php if ( $style == 'basic' ) : ?>
+<div class="title-container <?php print $color; ?> <?php print $style ?>" style="background-image:url(<?php print $image; ?>);">
 	<div class="title">
 		<h1><?php print $title ?></h1>
 	</div>
-	<?php else : ?>
-	<img src="<?php the_sub_field( 'image' ); ?>" alt="<?php print $title ?>" title="<?php print $title ?>" />
-	<?php endif; ?>
 </div>
 	<?php
 }

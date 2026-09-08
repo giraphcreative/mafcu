@@ -54,24 +54,29 @@
     }
     &.vertical {
         .icons {
+            overflow-x: auto;
+            .icon {
+                margin-right: 0;
+                display: block;
+                .icon-container {
+                    max-height: 150px;
+                    margin: 0 auto 30px;
+                    &:after {
+                        width: 90%;
+                        left: 5%;
+                        top: auto;
+                        bottom: 0;
+                    }
+                }
+                .icon-content {
+                    text-align: center;
+                }
+            }
             @include respond-to( $bp-m) {
                 flex-wrap: nowrap;
                 .icon {
                     flex: 1;
-                    display: block;
-                    .icon-container {
-                        max-height: 150px;
-                        margin: 0 auto 30px;
-                        &:after {
-                            width: 90%;
-                            left: 5%;
-                            top: auto;
-                            bottom: 0;
-                        }
-                    }
-                    .icon-content {
-                        text-align: center;
-                    }
+                    margin-right: 3%;
                 }
             }
         }
