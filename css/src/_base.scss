@@ -20,6 +20,9 @@ h6,
 p {
     @include font;
     line-height: 1.5em;
+    strong {
+        @include font-bold;
+    }
 }
 
 h1 {
@@ -50,10 +53,12 @@ h2 {
 }
 
 h3 {
+    padding: 8px 0;
     font-size: 1.6em;
 }
 
 h4 {
+    padding: 8px 0;
     font-size: 1.4em;
 }
 
