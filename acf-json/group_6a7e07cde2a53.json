@@ -3,6 +3,24 @@
     "title": "Site Settings",
     "fields": [
         {
+            "key": "field_6aabfe7474ff2",
+            "label": "Footer Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
             "key": "field_6a7e07ce55dac",
             "label": "Footer Columns",
             "name": "footer-column",
@@ -54,6 +72,74 @@
                     "parent_repeater": "field_6a7e07ce55dac"
                 }
             ]
+        },
+        {
+            "key": "field_6aabfe8cfb3ab",
+            "label": "Code Blocks",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_6aabfe9bfb3ac",
+            "label": "Header Scripts",
+            "name": "scripts-header",
+            "aria-label": "",
+            "type": "acfe_code_editor",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "mode": "text\/html",
+            "lines": 1,
+            "indent_unit": 4,
+            "maxlength": "",
+            "rows": 15,
+            "max_rows": "",
+            "return_format": [],
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_6aabfef7fb3ad",
+            "label": "Footer Scripts",
+            "name": "scripts-footer",
+            "aria-label": "",
+            "type": "acfe_code_editor",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "mode": "text\/html",
+            "lines": 1,
+            "indent_unit": 4,
+            "maxlength": "",
+            "rows": 15,
+            "max_rows": "",
+            "return_format": [],
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -82,5 +168,5 @@
             "json"
         ]
     },
-    "modified": 1787016813
+    "modified": 1789656885
 }

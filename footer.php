@@ -31,7 +31,7 @@ $admin_email = get_option( 'admin_email' );
 	</footer>
 
 </div><!-- #container -->
-
+<?php the_field( 'scripts-footer', 'option' ); ?>
 <?php wp_footer(); ?>
 </body>
 </html>

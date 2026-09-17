@@ -18,6 +18,7 @@
 <?php wp_head(); ?>
 <script src="https://kit.fontawesome.com/731c28f6f9.js" crossorigin="anonymous"></script>
 <link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=6" rel="stylesheet" type="text/css">
+<?php the_field( 'scripts-header', 'option' ); ?>
 
 </head>
 <body <?php body_class(); ?>>
