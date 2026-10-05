@@ -1,0 +1,44 @@
+    .table {
+        overflow: hidden;
+        margin: 10px 0 25px;
+        overflow-x: auto;
+    }
+    
+    table {
+        width: 100%;
+        th.super {
+            background: $navy;
+            color: white;
+            @include font-bold;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: white;
+            }
+        }
+        tr {
+            th,
+            td {
+                vertical-align: top;
+                padding: 15px 30px 15px 20px;
+                border: 1px solid rgba( black, .2);
+                border-right: 0;
+                border-top: 0;
+                line-height: 1.4em;
+                &.label {
+                    @include font-bold;
+                    border-left: 0;
+                }
+            }
+            th.sub {
+                border-left: 0;
+                padding: 15px 20px;
+                background: rgba( black, .1);
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    }

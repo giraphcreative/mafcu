@@ -313,6 +313,28 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_66f229110e67a"
+                },
+                {
+                    "key": "field_6ac400d3926e3",
+                    "label": "Header",
+                    "name": "header",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "8",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_66f229110e67a"
                 }
             ]
         }
@@ -343,5 +365,5 @@
             "json"
         ]
     },
-    "modified": 1787016405
+    "modified": 1791230109
 }

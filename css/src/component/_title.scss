@@ -3,17 +3,8 @@
     overflow: hidden;
     background: white center center no-repeat;
     background-size: cover;
-    padding: 50px 0 30px 0;
     @include respond-to( $bp-m) {
         padding: 13% 0 13%;
-        .title {
-            max-width: 40%;
-        }
-    }
-    @include respond-to( $bp-l) {
-        .title {
-            max-width: 35%;
-        }
     }
     &.navy .title,
     &.navy .title:before,
@@ -49,12 +40,18 @@
         position: relative;
         @include padding;
         background: $grey;
+        width: 100%;
+        @include respond-to( $bp-m) {
+            width: fit-content;
+            max-width: 50%;
+        }
         &:after {
             content: '';
             position: absolute;
-            right: -28px;
+            z-index: 0;
+            right: -30px;
             top: 0;
-            width: 50px;
+            width: 60px;
             height: 100%;
             background: $grey;
             transform: skewX(-12deg);
@@ -62,16 +59,23 @@
         }
     }
     h1 {
+        position: relative;
+        z-index: 1;
         color: white;
         text-transform: uppercase;
         @include font-black;
         font-size: 2em;
         line-height: 1em;
-        @include respond-to( $bp-m) {
-            font-size: 3em;
-        }
-        @include respond-to( $bp-l) {
-            font-size: 4em;
-        }
+        margin: 0;
+        /* Fluid font scaling based on the parent container's width */
+        /* clamp(minimum_size, preferred_size_in_container_units, maximum_size) */
+        font-size: clamp(2em, 4cqi, 4em);
+        line-height: 1.3;
+        /* Force truncation at exactly 2 lines */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-wrap: balance;
     }
 }
