@@ -20,6 +20,13 @@
 <link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=12" rel="stylesheet" type="text/css">
 <?php print get_field( 'scripts-header', 'option' ); ?>
 
+<link rel="icon" type="image/png" href="/wp-content/themes/mafcu/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/wp-content/themes/mafcu/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/wp-content/themes/mafcu/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/mafcu/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Mid-Atlantic" />
+<link rel="manifest" href="/wp-content/themes/mafcu/favicon/site.webmanifest" />
+
 </head>
 <body <?php body_class(); ?>>
 <header>
