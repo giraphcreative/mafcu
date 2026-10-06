@@ -9,6 +9,7 @@
  * @since Twenty Twelve 1.0
  */
 $admin_email = get_option( 'admin_email' );
+$footer_style = get_field( 'footer_style' );
 ?>
 	
 	</section>
@@ -28,10 +29,16 @@ $admin_email = get_option( 'admin_email' );
 			</div>
 			<?php endwhile; ?>
 		</div>
+		<?php if ( $footer_style == 'uninsured' ) { ?>
+		<div class="uninsured">
+			<?php the_field( 'uninsured', 'option' ) ?>
+		</div>
+		<?php } else { ?>
 		<div class="gov-logos">
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" />
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" />
 		</div>
+		<?php } ?>
 	</footer>
 
 </div><!-- #container -->

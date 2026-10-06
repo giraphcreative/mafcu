@@ -36,6 +36,10 @@ footer {
         bottom: 15px;
         right: 25px;
     }
+    .uninsured {
+        font-size: .9em;
+        @extend .content-style;
+    }
     @include respond-to( $bp-m) {
         .columns {
             display: flex;

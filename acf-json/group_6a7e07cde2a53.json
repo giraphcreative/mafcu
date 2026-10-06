@@ -140,6 +140,27 @@
             "max_rows": "",
             "return_format": [],
             "allow_in_bindings": 0
+        },
+        {
+            "key": "field_6ac44f81fc676",
+            "label": "Uninsured Content",
+            "name": "uninsured",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "This content displays on the bottom of pages where the 'uninsured' footer style is selected. It displays in lieu of the NCUA and Equal Housing Opportunity logos.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -168,5 +189,5 @@
             "json"
         ]
     },
-    "modified": 1789656885
+    "modified": 1791250709
 }
