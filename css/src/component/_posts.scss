@@ -103,12 +103,14 @@
         &.yellow .entry-inner {
             background: rgba( $yellow, .1);
         }
-        .thumbnail {
+        .entry-thumbnail {
             position: relative;
+            a {
+                border-bottom: 0 !important;
+            }
             img {
                 display: block;
                 width: 100%;
-                margin-bottom: 20px;
             }
         }
         h4 {

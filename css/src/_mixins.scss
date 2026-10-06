@@ -94,3 +94,21 @@ $margin: 5%;
         padding: $top $margin $bottom;
     }
 }
+
+@mixin white-text {
+    color: white;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+    a:not(.btn) {
+        border-bottom: 1px dotted rgba( white, .7);
+        &:hover {
+            border-bottom: 1px solid rgba( white, 1);
+        }
+    }
+}
