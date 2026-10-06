@@ -9,6 +9,7 @@
 }
 
 input[type=text],
+input[type=password],
 input[type=search],
 select {
     @extend .text-field;
@@ -30,7 +31,7 @@ select {
             .gfield_description {
                 padding-top: 0;
             }
-            ::placeholder {
+             ::placeholder {
                 color: #ddd;
             }
             &.field_description_below.gsection {

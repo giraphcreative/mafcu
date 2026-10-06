@@ -17,7 +17,7 @@
 
 <?php wp_head(); ?>
 <script src="https://kit.fontawesome.com/731c28f6f9.js" crossorigin="anonymous"></script>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=12" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=13" rel="stylesheet" type="text/css">
 <?php print get_field( 'scripts-header', 'option' ); ?>
 
 <link rel="icon" type="image/png" href="/wp-content/themes/mafcu/favicon/favicon-96x96.png" sizes="96x96" />
@@ -44,9 +44,9 @@
 			</nav>
 
 			<div class="aux">
-				<a href="#" class="btn blue"><i class="fa-solid fa-messages"></i> Make an Appointment</a>
-				<a href="#" class="btn green"><i class="fa-solid fa-location-dot"></i> Locations &amp; Hours</a>
-				<a href="#" class="btn yellow"><i class="fa-solid fa-lock-keyhole"></i> Online Services Login</a>
+				<a href="https://appointments.mafcu.org/#/services" class="btn blue"><i class="fa-solid fa-messages"></i> Make an Appointment</a>
+				<a href="https://mafcu.giraph.io/locations-and-atms/" class="btn green"><i class="fa-solid fa-location-dot"></i> Locations &amp; Hours</a>
+				<a href="#" class="btn yellow olb-show"><i class="fa-solid fa-lock-keyhole"></i> Online Services Login</a>
 			</div>
 		</div>
 	</div>

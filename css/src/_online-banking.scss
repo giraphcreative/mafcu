@@ -1,0 +1,79 @@
+.online-banking {
+    display: none;
+    background: rgba( black, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    &.visible {
+        display: flex;
+        align-items: center;
+    }
+    .online-banking-inner {
+        background: $navy;
+        color: white;
+        padding: 30px;
+        flex: 1;
+        max-width: 400px;
+        margin: 0 auto;
+        a {
+            color: white;
+        }
+        .olb-logo {
+            margin-bottom: 20px;
+        }
+        .form-floating {
+            position: relative;
+            padding-bottom: 20px;
+            input[type=text],
+            input[type=password] {
+                width: 100%;
+            }
+            label {
+                display: block;
+                padding-top: 7px;
+                font-size: .9em;
+                color: rgba( white, .7);
+            }
+            .toggle-password-mask {
+                position: absolute;
+                top: 13px;
+                right: 15px;
+                border: 0;
+                background: none;
+            }
+        }
+        input[type=submit] {
+            position: relative;
+            @include font-black;
+            opacity: 1;
+            border: 0;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            background-color: $sky;
+            color: $navy;
+            -webkit-appearance: none;
+            border-radius: 0;
+            @include respond-to( $bp-m) {
+                font-size: 17px;
+                line-height: 20px;
+            }
+        }
+        .oblNav {
+            padding-top: 15px;
+            a {
+                font-size: .9em;
+                margin-right: 15px;
+            }
+        }
+    }
+}

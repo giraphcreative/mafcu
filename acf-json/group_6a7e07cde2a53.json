@@ -74,6 +74,27 @@
             ]
         },
         {
+            "key": "field_6ac44f81fc676",
+            "label": "Uninsured Content",
+            "name": "uninsured",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "This content displays on the bottom of pages where the 'uninsured' footer style is selected. It displays in lieu of the NCUA and Equal Housing Opportunity logos.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_6aabfe8cfb3ab",
             "label": "Code Blocks",
             "name": "",
@@ -142,12 +163,12 @@
             "allow_in_bindings": 0
         },
         {
-            "key": "field_6ac44f81fc676",
-            "label": "Uninsured Content",
-            "name": "uninsured",
+            "key": "field_6ac45dc401b65",
+            "label": "Online Banking",
+            "name": "olb",
             "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "This content displays on the bottom of pages where the 'uninsured' footer style is selected. It displays in lieu of the NCUA and Equal Housing Opportunity logos.",
+            "type": "acfe_code_editor",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -156,11 +177,15 @@
                 "id": ""
             },
             "default_value": "",
-            "allow_in_bindings": 0,
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "mode": "text\/html",
+            "lines": 1,
+            "indent_unit": 4,
+            "maxlength": "",
+            "rows": 4,
+            "max_rows": "",
+            "return_format": [],
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -189,5 +214,5 @@
             "json"
         ]
     },
-    "modified": 1791250709
+    "modified": 1791254094
 }
