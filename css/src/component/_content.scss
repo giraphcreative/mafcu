@@ -2,6 +2,18 @@
     padding: 12px 0;
 }
 
+@mixin white-text {
+    color: white;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+}
+
 .content-one {
     @extend .content-style;
     @include padding;
@@ -9,7 +21,7 @@
     color: $navy;
     &.navy {
         background: $navy;
-        color: white;
+        @include white-text;
     }
     &.sky {
         background: $sky;
@@ -18,7 +30,7 @@
     &.stripes-navy {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
-        color: white;
+        @include white-text;
     }
     &.stripes-white {
         background: white url(../img/bg-stripes-white.svg) center center no-repeat fixed;
@@ -28,7 +40,7 @@
     &.rings {
         background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
         background-size: cover;
-        color: white;
+        @include white-text;
     }
     &.stripes-light-navy {
         background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
@@ -70,7 +82,7 @@
     color: $navy;
     &.navy {
         background: $navy;
-        color: white;
+        @include white-text;
     }
     &.sky {
         background: $sky;
@@ -79,7 +91,7 @@
     &.stripes-navy {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
-        color: white;
+        @include white-text;
     }
     &.stripes-light-navy {
         background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
@@ -93,7 +105,7 @@
     &.rings {
         background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
         background-size: cover;
-        color: white;
+        @include white-text;
     }
     &.pad-none {
         padding: 0 !important;
@@ -218,12 +230,12 @@
     color: $navy;
     &.navy {
         background: $navy;
-        color: white;
+        @include white-text;
     }
     &.stripes-navy {
         background: $navy url(../img/bg-stripes-white.svg) center center no-repeat fixed;
         background-size: cover;
-        color: white;
+        @include white-text;
     }
     &.stripes-light-navy {
         background: rgba( $navy, .2) url(../img/bg-stripes-whiter.svg) center center no-repeat fixed;
@@ -237,7 +249,7 @@
     &.rings {
         background: $navy url(../img/bg-tree-rings.svg) center center no-repeat fixed;
         background-size: cover;
-        color: white;
+        @include white-text;
     }
     &.pad-none {
         padding: 0 !important;

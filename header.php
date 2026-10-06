@@ -17,7 +17,7 @@
 
 <?php wp_head(); ?>
 <script src="https://kit.fontawesome.com/731c28f6f9.js" crossorigin="anonymous"></script>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=10" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=11" rel="stylesheet" type="text/css">
 <?php print get_field( 'scripts-header', 'option' ); ?>
 
 </head>
