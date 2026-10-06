@@ -1,145 +1,193 @@
-header {
-    background: $navy;
-    position: relative;
-    @include respond-to( $bp-l) {
-        display: flex;
+@include respond-to( $bp-l) {
+    .admin-bar header {
+        top: 32px;
     }
-    align-items: center;
-    .logo {
-        padding: 20px;
-        @include respond-to( $bp-l) {
-            padding: 30px 20px 30px 30px;
-            flex: 0 0 25%;
+    .header-spacer,
+    header .header-container .header-inner {
+        height: 110px;
+        transition: 400ms all ease-in-out;
+        body.scrolled & {
+            height: 95px;
         }
-        img {
-            width: 80%;
-            max-width: 350px;
+    }
+}
+
+@include respond-to( $bp-xl) {
+    header .header-container .header-inner {
+        height: 140px;
+        body.scrolled & {
+            height: 100px;
+        }
+    }
+}
+
+header {
+    width: 100%;
+    @include respond-to( $bp-l) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    .header-container {
+        min-width: 320px;
+        max-width: 1450px;
+        margin: 0 auto;
+        width: 100%;
+        .header-inner {
+            width: 100%;
+            background: $navy;
+            position: relative;
+            transition: 400ms all ease-in-out;
             @include respond-to( $bp-l) {
+                display: flex;
                 width: 100%;
             }
-        }
-    }
-    .aux {
-        text-align: center;
-        .btn {
-            @include font-narrow-bold;
-            font-size: 1.2em;
-            display: block;
-            margin: 0 30px;
-            i {
-                height: 24px;
+            @include respond-to( $bp-xl) {
+                height: 140px;
             }
-            @include respond-to( $bp-s) {
-                display: inline-block;
-                margin: 0 15px;
-            }
-        }
-        @include respond-to( $bp-l) {
-            position: absolute;
-            top: 0;
-            right: 10px;
-        }
-    }
-    nav {
-        @include clearfix;
-        position: relative;
-        @include respond-to( $bp-l) {
-            flex: 0 0 75%;
-            text-align: right;
-            padding-top: 35px;
-        }
-        button {
-            position: absolute;
-            right: 15px;
-            top: -50px;
-            width: 30px;
-            height: 30px;
-            border: 0;
-            padding: 0;
-            background: white;
-            color: transparent;
-            background: url(../img/icon-menu.svg) center center no-repeat;
-            overflow: hidden;
-            text-indent: 1000px;
-            @include respond-to( 400px) {
-                right: 20px;
-            }
-            @include respond-to( $bp-l) {
-                display: none;
-            }
-        }
-        .nav-menu {
-            display: none;
+            align-items: center;
             position: relative;
-            z-index: 1000;
-            @include respond-to( $bp-l) {
-                padding: 0 30px 0 15px;
-                display: flex;
-            }
-            li {
+            .logo {
+                padding: 20px;
                 @include respond-to( $bp-l) {
-                    box-shadow: none;
-                    position: relative;
-                    flex: 1;
+                    padding: 30px 0 30px 30px;
+                    flex: 0 0 25%;
                 }
-                a {
-                    @include font-black;
+                @include respond-to( $bp-xl) {
+                    padding: 30px;
+                }
+                img {
+                    width: 80%;
+                    max-width: 350px;
+                    @include respond-to( $bp-l) {
+                        width: 100%;
+                    }
+                }
+            }
+            .aux {
+                text-align: center;
+                .btn {
+                    @include font-narrow-bold;
+                    font-size: 1.2em;
                     display: block;
-                    padding: 15px 5px;
-                    font-size: 17px;
-                    line-height: 22px;
-                    color: white;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    width: 100%;
-                    transition: 400ms background-color ease-in-out;
-                    background-color: transparent;
-                    text-align: center;
+                    margin: 0 30px;
+                    i {
+                        height: 24px;
+                    }
+                    @include respond-to( $bp-s) {
+                        display: inline-block;
+                        margin: 0 15px;
+                    }
+                }
+                @include respond-to( $bp-l) {
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                }
+            }
+            nav {
+                @include clearfix;
+                position: relative;
+                @include respond-to( $bp-l) {
+                    flex: 0 0 75%;
+                    text-align: right;
+                    padding-top: 35px;
+                }
+                button {
+                    position: absolute;
+                    right: 15px;
+                    top: -50px;
+                    width: 30px;
+                    height: 30px;
+                    border: 0;
+                    padding: 0;
+                    background: white;
+                    color: transparent;
+                    background: url(../img/icon-menu.svg) center center no-repeat;
+                    overflow: hidden;
+                    text-indent: 1000px;
+                    @include respond-to( 400px) {
+                        right: 20px;
+                    }
                     @include respond-to( $bp-l) {
-                        padding: 15px 10px;
-                        font-size: 16px;
-                    }
-                    @include respond-to( $bp-xl) {
-                        font-size: 19px;
+                        display: none;
                     }
                 }
-                &:hover,
-                &.open {
-                    a {
-                        background-color: lighten( $navy, 8%);
-                    }
-                    ul.sub-menu {
-                        @include respond-to( $bp-l) {
-                            display: block;
-                        }
-                    }
-                }
-                ul.sub-menu {
+                .nav-menu {
                     display: none;
-                    margin-bottom: 3px;
-                    box-shadow: 0 10px 20px rgba( black, .2);
+                    position: relative;
+                    z-index: 1000;
                     @include respond-to( $bp-l) {
-                        position: absolute;
-                        right: 0;
-                        top: 52px;
-                        min-width: 100%;
-                        max-width: 225px;
-                        background-color: lighten( $navy, 8%);
+                        padding: 0 30px 0 15px;
+                        display: flex;
                     }
                     li {
-                        display: block;
-                        width: 100%;
+                        @include respond-to( $bp-l) {
+                            box-shadow: none;
+                            position: relative;
+                            flex: 1;
+                        }
                         a {
-                            @include font-bold;
-                            font-size: 15px;
-                            line-height: 18px;
+                            @include font-black;
                             display: block;
-                            padding: 10px 5px;
-                            white-space: nowrap;
+                            padding: 15px 5px;
+                            font-size: 17px;
+                            line-height: 22px;
+                            color: white;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            width: 100%;
+                            transition: 400ms background-color ease-in-out;
+                            background-color: transparent;
+                            text-align: center;
                             @include respond-to( $bp-l) {
-                                padding: 10px 15px;
-                                &:hover {
-                                    background-color: lighten( $navy, 15%);
+                                padding: 15px 10px;
+                                font-size: 16px;
+                            }
+                            @include respond-to( $bp-xl) {
+                                font-size: 19px;
+                            }
+                        }
+                        &:hover,
+                        &.open {
+                            a {
+                                background-color: lighten( $navy, 8%);
+                            }
+                            ul.sub-menu {
+                                @include respond-to( $bp-l) {
+                                    display: block;
+                                }
+                            }
+                        }
+                        ul.sub-menu {
+                            display: none;
+                            margin-bottom: 3px;
+                            box-shadow: 0 10px 20px rgba( black, .2);
+                            @include respond-to( $bp-l) {
+                                position: absolute;
+                                right: 0;
+                                top: 52px;
+                                min-width: 100%;
+                                max-width: 225px;
+                                background-color: lighten( $navy, 8%);
+                            }
+                            li {
+                                display: block;
+                                width: 100%;
+                                a {
+                                    @include font-bold;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    display: block;
+                                    padding: 10px 5px;
+                                    white-space: nowrap;
+                                    @include respond-to( $bp-l) {
+                                        padding: 10px 15px;
+                                        &:hover {
+                                            background-color: lighten( $navy, 15%);
+                                        }
+                                    }
                                 }
                             }
                         }

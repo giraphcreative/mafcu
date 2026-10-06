@@ -8,12 +8,10 @@ function p_scripts() {
 add_action( 'wp_enqueue_scripts', 'p_scripts' );
 
 
-
 // register a couple nav menus
 register_nav_menus( array(
 	'main-menu' => 'Main'
 ) );
-
 
 
 // register a generic sidebar.
@@ -27,9 +25,21 @@ register_sidebar( array(
 ) );
 
 
-
 // set excerpt to short word count.
 function custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+// add super and subscript to the editor
+function my_mce_buttons_2( $buttons ) {	
+	/**
+	 * Add in a core button that's disabled by default
+	 */
+	$buttons[] = 'superscript';
+	$buttons[] = 'subscript';
+
+	return $buttons;
+}
+add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );

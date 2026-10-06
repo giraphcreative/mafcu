@@ -17,32 +17,35 @@
 
 <?php wp_head(); ?>
 <script src="https://kit.fontawesome.com/731c28f6f9.js" crossorigin="anonymous"></script>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=7" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=8" rel="stylesheet" type="text/css">
 <?php print get_field( 'scripts-header', 'option' ); ?>
 
 </head>
 <body <?php body_class(); ?>>
-<div class="container">
 <header>
-	
-	<div class="logo">
-		<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			<img src="<?php bloginfo( "template_url" ) ?>/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>">
-		</a>
-	</div>
+	<div class="header-container">
+		<div class="header-inner">
+			<div class="logo">
+				<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php bloginfo( "template_url" ) ?>/img/logo.svg" alt="<?php bloginfo( 'name' ); ?>">
+				</a>
+			</div>
 
-	<nav>
-		<button class="menu-toggle">Show/hide Menu</button>
-		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
-	</nav>
+			<nav>
+				<button class="menu-toggle">Show/hide Menu</button>
+				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
+			</nav>
 
-	<div class="aux">
-		<a href="#" class="btn blue"><i class="fa-solid fa-messages"></i> Make an Appointment</a>
-		<a href="#" class="btn green"><i class="fa-solid fa-location-dot"></i> Locations &amp; Hours</a>
-		<a href="#" class="btn yellow"><i class="fa-solid fa-lock-keyhole"></i> Online Services Login</a>
+			<div class="aux">
+				<a href="#" class="btn blue"><i class="fa-solid fa-messages"></i> Make an Appointment</a>
+				<a href="#" class="btn green"><i class="fa-solid fa-location-dot"></i> Locations &amp; Hours</a>
+				<a href="#" class="btn yellow"><i class="fa-solid fa-lock-keyhole"></i> Online Services Login</a>
+			</div>
+		</div>
 	</div>
-	
 </header>
+<div class="header-spacer"></div>
+<div class="container">
 
 <section class="content">
 	<a name="content"></a>

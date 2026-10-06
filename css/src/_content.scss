@@ -59,7 +59,9 @@
 }
 
 .wrap {
-    max-width: 1220px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1450px;
     margin: 0 auto;
 }
 
