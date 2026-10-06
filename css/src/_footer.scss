@@ -5,6 +5,7 @@ footer {
     background-size: contain;
     color: $navy;
     line-height: 1.5em;
+    position: relative;
     a {
         color: $blue;
     }
@@ -17,7 +18,10 @@ footer {
             padding-top: 15px;
         }
         .photo img {
-            max-width: 300px;
+            max-width: 100%;
+            @include respond-to( $bp-s) {
+                max-width: 300px;
+            }
         }
     }
     .socials {
@@ -26,6 +30,11 @@ footer {
                 max-width: 50px;
             }
         }
+    }
+    .gov-logos {
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
     }
     @include respond-to( $bp-m) {
         .columns {

@@ -69,7 +69,7 @@
         margin: 0;
         /* Fluid font scaling based on the parent container's width */
         /* clamp(minimum_size, preferred_size_in_container_units, maximum_size) */
-        font-size: clamp(2em, 4cqi, 4em);
+        font-size: clamp(1.8em, 4cqi, 4em);
         line-height: 1.3;
         /* Force truncation at exactly 2 lines */
         display: -webkit-box;

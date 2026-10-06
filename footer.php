@@ -28,6 +28,10 @@ $admin_email = get_option( 'admin_email' );
 			</div>
 			<?php endwhile; ?>
 		</div>
+		<div class="gov-logos">
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" />
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" />
+		</div>
 	</footer>
 
 </div><!-- #container -->

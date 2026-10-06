@@ -9,6 +9,7 @@ $accordion-arrow-size: 35px;
             background-color: $grey;
             color: white;
             padding: 15px 50px 15px 20px;
+            margin-right: 15px;
             cursor: pointer;
             font-size: 1.1em;
             text-transform: uppercase;
@@ -41,13 +42,14 @@ $accordion-arrow-size: 35px;
             &:before {
                 content: '';
                 position: absolute;
-                right: -15px;
+                right: -10px;
                 top: 0;
                 width: 25px;
                 height: 100%;
                 background: $grey;
                 transform: skewX(-12deg);
                 transition: all 300ms ease-in-out;
+                pointer-events: none;
             }
         }
         .accordion-content {
