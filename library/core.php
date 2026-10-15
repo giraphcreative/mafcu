@@ -34,9 +34,6 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // add super and subscript to the editor
 function my_mce_buttons_2( $buttons ) {	
-	/**
-	 * Add in a core button that's disabled by default
-	 */
 	$buttons[] = 'superscript';
 	$buttons[] = 'subscript';
 

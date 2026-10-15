@@ -23,6 +23,7 @@ get_header();
 			// Start the Loop.
 			while ( have_posts() ) : the_post(); 
 				$color = get_field( 'color' );
+				if ( empty( $color ) ) $color = 'grey';
 				$categories = get_the_category();
 				$cat = $categories[0];
 				$return = '<div class="entry ' . $color . '">';

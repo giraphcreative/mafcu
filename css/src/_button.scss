@@ -120,6 +120,10 @@
             opacity: .8;
         }
     }
+    &.grey.arrow {
+        background: transparent url(../img/button-arrow-grey.svg) right center no-repeat;
+        background-size: contain;
+    }
     &.navy.arrow {
         background: transparent url(../img/button-arrow-navy.svg) right center no-repeat;
         background-size: contain;

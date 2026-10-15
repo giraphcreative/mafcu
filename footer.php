@@ -32,6 +32,12 @@ $footer_style = get_field( 'footer_style' );
 		<?php if ( $footer_style == 'uninsured' ) { ?>
 		<div class="uninsured">
 			<?php the_field( 'uninsured', 'option' ) ?>
+			<div class="uninsured-boxes">
+				<div class="uninsured-box"><span>Not insured by NCUA or Any Other Government Agency</span></div>
+				<div class="uninsured-box"><span>Not Credit Union Guaranteed</span></div>
+				<div class="uninsured-box"><span>Not Credit Union Deposits or Obligations</span></div>
+				<div class="uninsured-box"><span>May Lose Value</span></div>
+			</div>
 		</div>
 		<?php } else { ?>
 		<div class="gov-logos">
