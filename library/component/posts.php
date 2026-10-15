@@ -23,5 +23,3 @@ $more_news_link = get_sub_field( 'more_news_link' );
     </div>
     <?php if ( $more_news ) : ?><p class="text-center"><a href="<?php print $more_news_link['url'] ?>" class="btn red"><?php print $more_news_link['title'] ?></a></p><?php endif; ?>
 </div>
-<?php
-
