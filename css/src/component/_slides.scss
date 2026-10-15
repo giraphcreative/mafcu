@@ -97,6 +97,7 @@
         width: 25px;
         height: 40px;
         margin-top: -20px;
+        border: 0;
         @include respond-to( $bp-l) {
             width: 35px;
             height: 50px;

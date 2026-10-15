@@ -43,3 +43,7 @@ function my_mce_buttons_2( $buttons ) {
 	return $buttons;
 }
 add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
+
+
+// add excerpt support for pages
+add_post_type_support( 'page', 'excerpt' );
