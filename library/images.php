@@ -110,5 +110,5 @@ function p_is_image( $img_path ) {
 }
 
 
-
+// remove size='auto' from images to prevent stretching.
 add_filter('wp_img_tag_add_auto_sizes', '__return_false');

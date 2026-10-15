@@ -40,7 +40,6 @@ jQuery(document).ready(function($) {
 
     $(window).on('scroll', function() {
         var yOffset = parseInt($(this).scrollTop());
-        console.log(yOffset);
         if (yOffset > 100) {
             $('body').addClass('scrolled');
         } else {
