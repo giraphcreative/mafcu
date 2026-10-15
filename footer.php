@@ -44,7 +44,7 @@ $footer_style = get_field( 'footer_style' );
 </div><!-- #container -->
 <div class="online-banking">
 	<div class="online-banking-inner">
-		<a class="close"></a>
+		<a class="close">&#xd7;</a>
 		<img src="<?php bloginfo( 'template_url' ) ?>/img/logo.svg" class="olb-logo" />
 		<?php print get_field( 'olb', 'option' ); ?>
 	</div>

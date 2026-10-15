@@ -20,6 +20,14 @@ toggleButton.addEventListener('click', () => {
 // onload
 jQuery(document).ready(function($) {
 
+    var openOlb = function() {
+        $('.online-banking').addClass('visible');
+    }
+
+    var closeOlb = function() {
+        $('.online-banking').removeClass('visible');
+    }
+
     // button click handler for download option - if that parameter is set.
     $(".olb-show").on('click', function(event) {
 
@@ -27,7 +35,24 @@ jQuery(document).ready(function($) {
         event.preventDefault();
 
         // force download of the url to a specific filename.
-        $('.online-banking').addClass('visible');
-    })
+        openOlb();
+
+    });
+
+    // close on close button push
+    $('.close').on('click', closeOlb);
+
+    // close when escape is pressed
+    document.addEventListener("keydown", function(event) {
+        if ($(event.target).closest("input")[0]) {
+            return;
+        }
+        if (event.key === "Escape") {
+            closeOlb();
+        }
+        if (event.key.toLowerCase() === "o") {
+            openOlb();
+        }
+    });
 
 });

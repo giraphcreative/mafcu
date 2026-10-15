@@ -13,10 +13,11 @@
 }
 
 @include respond-to( $bp-xl) {
+    .header-spacer,
     header .header-container .header-inner {
         height: 140px;
         body.scrolled & {
-            height: 100px;
+            height: 105px;
         }
     }
 }
@@ -90,7 +91,7 @@ header {
                 @include clearfix;
                 position: relative;
                 @include respond-to( $bp-l) {
-                    flex: 0 0 75%;
+                    flex: 0 0 73%;
                     text-align: right;
                     padding-top: 35px;
                 }

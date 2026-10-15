@@ -43,6 +43,13 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
 			</nav>
 
+			<div class="search">
+				<button class="search-toggle"></button>
+				<div class="search-form">
+					<?php print get_search_form(); ?>
+				</div>
+			</div>
+
 			<div class="aux">
 				<a href="https://appointments.mafcu.org/#/services" class="btn blue"><i class="fa-solid fa-messages"></i> Make an Appointment</a>
 				<a href="https://mafcu.giraph.io/locations-and-atms/" class="btn green"><i class="fa-solid fa-location-dot"></i> Locations &amp; Hours</a>
