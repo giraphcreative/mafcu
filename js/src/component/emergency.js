@@ -1,10 +1,10 @@
 // onload emergency bar handling
 jQuery(document).ready(function($) {
 
-    var bar = $('.emergency-container');
-    var identifier = bar.data('id');
-    var shown = localStorage.getItem(identifier);
-    if (bar.length) {
+    $('.emergency-container').each(function() {
+        var bar = $(this);
+        var identifier = bar.data('id');
+        var shown = localStorage.getItem(identifier);
         if (shown == null) {
             bar.addClass('show');
             bar.find('.close').click(function() {
@@ -12,6 +12,6 @@ jQuery(document).ready(function($) {
                 localStorage.setItem(identifier, 'true');
             });
         }
-    }
+    });
 
 });

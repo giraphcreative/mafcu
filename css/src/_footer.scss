@@ -24,8 +24,12 @@ footer {
             }
         }
     }
+    .apps a {
+        border-bottom: 0;
+    }
     .socials {
         a {
+            border-bottom: 0;
             img {
                 max-width: 50px;
             }

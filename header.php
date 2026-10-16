@@ -17,7 +17,7 @@
 
 <?php wp_head(); ?>
 <script src="https://kit.fontawesome.com/731c28f6f9.js" crossorigin="anonymous"></script>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=15" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=17" rel="stylesheet" type="text/css">
 <?php print get_field( 'scripts-header', 'option' ); ?>
 
 <link rel="icon" type="image/png" href="/wp-content/themes/mafcu/favicon/favicon-96x96.png" sizes="96x96" />
@@ -63,3 +63,21 @@
 
 <section class="content">
 	<a name="content"></a>
+	<?php
+
+$emergency_content = get_field( 'emergency_content', 'option' );
+$emergency_link = get_field( 'emergency_link', 'option' );
+$emergency_color = get_field( 'emergency_color', 'option' );
+
+$unique_id = md5( $emergency_content );
+
+if ( !empty( $emergency_content) ) : ?>
+<div class="emergency-container <?php print $emergency_color ?>" data-id="<?php print $unique_id; ?>">
+    <a class="close">close emergency bar</a>
+    <?php if ( !empty( $emergency_link ) ) print '<a href="' . $emergency_link . '">'; ?>
+    <div class="emergency">
+        <?php print $emergency_content ?>
+    </div>
+    <?php if ( !empty( $emergency_link ) ) print '</a>'; ?>
+</div>
+<?php endif; ?>
